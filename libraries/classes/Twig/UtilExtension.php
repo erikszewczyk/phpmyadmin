@@ -147,6 +147,11 @@ class UtilExtension extends AbstractExtension
                 ['is_safe' => ['html']]
             ),
             new TwigFunction(
+                'link_to_var_documentation',
+                'PhpMyAdmin\Util::linkToVarDocumentation',
+                ['is_safe' => ['html']]
+            ),
+            new TwigFunction(
                 'localised_date',
                 'PhpMyAdmin\Util::localisedDate'
             ),
@@ -168,6 +173,10 @@ class UtilExtension extends AbstractExtension
                 'sortable_table_header',
                 'PhpMyAdmin\Util::sortableTableHeader',
                 ['is_safe' => ['html']]
+            ),
+            new TwigFunction(
+                'timespan_format',
+                'PhpMyAdmin\Util::timespanFormat'
             ),
         ];
     }
